@@ -41,16 +41,10 @@
   <view class="flex">
     <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box1">box1</view>
     <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box2">box2</view>
-  </view>
-  <view class="flex">
     <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box3">box3</view>
     <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box4">box4</view>
-  </view>
-  <view class="flex">
     <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box5">box5</view>
     <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box6">box6</view>
-  </view>
-  <view class="flex">
     <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box7">box7</view>
     <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box8">box8</view>
   </view>
