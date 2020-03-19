@@ -1,9 +1,5 @@
-const app = getApp();
 Page({
   data: {
-    keyword: '',
-    StatusBar: app.globalData.StatusBar,
-    CustomBar: app.globalData.CustomBar,
     cardCur: 0,
     swiperList: [{
       id: 0,
@@ -11,8 +7,8 @@ Page({
       url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg'
     }, {
       id: 1,
-      type: 'image',
-      url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84001.jpg',
+        type: 'image',
+        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84001.jpg',
     }, {
       id: 2,
       type: 'image',
@@ -34,41 +30,7 @@ Page({
       type: 'image',
       url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg'
     }],
-    iconList: [{
-      icon: 'cardboardfill',
-      color: 'red',
-      badge: 0,
-      name: '英雄联盟'
-    }, {
-      icon: 'recordfill',
-      color: 'orange',
-      badge: 0,
-      name: '王者荣耀'
-    }, {
-      icon: 'picfill',
-      color: 'black',
-      badge: 0,
-      name: '和平精英'
-    }, {
-      icon: 'noticefill',
-      color: 'olive',
-      badge: 0,
-      name: 'QQ飞车'
-    }, {
-      icon: 'upstagefill',
-      color: 'cyan',
-      badge: 0,
-      name: '第五人格'
-    }, {
-      icon: 'clothesfill',
-      color: 'blue',
-      badge: 0,
-      name: '超级玛丽'
-    }],
-    gridCol: 3,
-    skin: false
   },
-
   onLoad() {
     this.towerSwiper('swiperList');
     // 初始化towerSwiper 传已有的数组名即可
@@ -137,66 +99,5 @@ Page({
         swiperList: list
       })
     }
-  },
-  showModal(e) {
-    this.setData({
-      modalName: e.currentTarget.dataset.target
-    })
-  },
-  hideModal(e) {
-    this.setData({
-      modalName: null
-    })
-  },
-  menuBorder: function (e) {
-    this.setData({
-      menuBorder: e.detail.value
-    });
-  },
-  menuArrow: function (e) {
-    this.setData({
-      menuArrow: e.detail.value
-    });
-  },
-  menuCard: function (e) {
-    this.setData({
-      menuCard: e.detail.value
-    });
-  },
-  switchSex: function (e) {
-    this.setData({
-      skin: e.detail.value
-    });
-  },
-
-  // ListTouch触摸开始
-  ListTouchStart(e) {
-    this.setData({
-      ListTouchStart: e.touches[0].pageX
-    })
-  },
-
-  // ListTouch计算方向
-  ListTouchMove(e) {
-    this.setData({
-      ListTouchDirection: e.touches[0].pageX - this.data.ListTouchStart > 0 ? 'right' : 'left'
-    })
-  },
-
-  // ListTouch计算滚动
-  ListTouchEnd(e) {
-    if (this.data.ListTouchDirection == 'left') {
-      this.setData({
-        modalName: e.currentTarget.dataset.target
-      })
-    } else {
-      this.setData({
-        modalName: null
-      })
-    }
-    this.setData({
-      ListTouchDirection: null
-    })
-  },
-
+  }
 })

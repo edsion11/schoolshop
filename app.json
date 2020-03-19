@@ -1,5 +1,6 @@
 {
   "pages": [
+
     "pages/index/index",
     "pages/goods-category/goods-category",
     "pages/cart/cart",
@@ -7,7 +8,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#551188",
+    "navigationBarBackgroundColor": "#8799a3",
     "navigationBarTitleText": "商场test",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": false
@@ -16,8 +17,7 @@
     "color": "#8a8a8a",
     "selectedColor": "#d2364c",
     "backgroundColor": "#fff",
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "iconPath": "/images/nav-icon-home.png",
         "selectedIconPath": "/images/nav-icon-home-active.png",
@@ -51,5 +51,8 @@
   "navigateToMiniProgramAppIdList": [
     "wx219d041ce0cfc878"
   ],
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
   "sitemapLocation": "sitemap81.json"
 }
