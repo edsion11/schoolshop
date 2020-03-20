@@ -27,42 +27,40 @@
 
 #box1 {
   background-color: #e54d42;
-  height: 140px;
+  width: 100%;
+  display: -webkit-box;
+  /*设置为弹性盒子*/
+  -webkit-line-clamp: 2;
+  /*最多显示5行*/
+  overflow: hidden;
+  /*超出隐藏*/
+  text-overflow: ellipsis;
+  /*超出显示为省略号*/
+  letter-spacing: 5rpx;
 }
 
 #box2 {
+  width: 100%;
   background-color: #1cbbb4;
-  height: 140px;
+  display: -webkit-box;
+  /*设置为弹性盒子*/
+  -webkit-line-clamp: 2;
+  /*最多显示5行*/
+  overflow: hidden;
+  /*超出隐藏*/
+  text-overflow: ellipsis;
+  /*超出显示为省略号*/
+  letter-spacing: 5rpx;
 }
 
 #box3 {
   background-color: #f37b1d;
-  height: 140px;
+  height: 70px;
 }
 
 #box4 {
   background-color: #39b54a;
-  height: 140px;
-}
-
-#box5 {
-  background-color: #0081ff;
-  height: 140px;
-}
-
-#box6 {
-  background-color: #6739b6;
-  height: 140px;
-}
-
-#box7 {
-  background-color: #9c26b0;
-  height: 140px;
-}
-
-#box8 {
-  background-color: #e03997;
-  height: 140px;
+  height: 70px;
 }
 
 .zixun {

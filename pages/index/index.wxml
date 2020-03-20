@@ -53,19 +53,15 @@
     </swiper>
   </view>
   <view class="flex">
-    <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box1">商品1</view>
-    <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box2">商品2</view>
+    <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box1" bindtap="cardtap1" style="height:{{height1}}" >
+      策划方案1:一场聚会的开场不能缺少知识的分享，分享的知识可以是多方面的，比如养生、生活、情感、理财、运动、育儿等相关的知识进行分享，这些知识通用而且能够给他人一定的益处，与相对的书本知识来讲要好很多，不过这知识分享的达人需要年长且知识丰富。
+      <text bindtap="navto" style="color:#d2f1f0">点此查看</text>
+    </view>
   </view>
   <view class="flex">
-    <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box3">商品3</view>
-    <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box4">商品4</view>
-  </view>
-  <view class="flex">
-    <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box5">商品5</view>
-    <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box6">商品6</view>
-  </view>
-  <view class="flex">
-    <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box7">商品7</view>
-    <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box8">商品8</view>
+    <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box2" bindtap="cardtap2" style="height:{{height2}}">
+      策划方案2:相互介绍环节不能少，虽然是校友，但是人与人之间的隔阂还是有的，有长有幼，专业也各不相同，因此还是需要校友之间进行相互的介绍，自我介绍，比如自己的专业，级别，职位，所在的公司等相关的信息，在信息分享的时代，在资源整合的时代，校友之间的往来能给大家很好的帮助，而且校友之间的相互介绍也给校友之间的业务往来带来一定的帮助。
+      <text bindtap="navto" style="color:#d2f1f0">点此查看</text>
+</view>
   </view>
 </view>

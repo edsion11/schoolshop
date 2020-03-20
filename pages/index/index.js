@@ -5,6 +5,8 @@ Page({
     StatusBar: app.globalData.StatusBar,
     CustomBar: app.globalData.CustomBar,
     cardCur: 0,
+    height1: '70px',
+    height2: '70px',
     swiperList: [{
       id: 0,
       type: 'image',
@@ -35,35 +37,45 @@ Page({
       url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg'
     }],
     iconList: [{
-      icon: 'cardboardfill',
+      icon: 'picfill',
       color: 'red',
       badge: 0,
-      name: '英雄联盟'
+      name: '策划'
     }, {
-      icon: 'recordfill',
+      icon: 'cardboardfill',
       color: 'orange',
       badge: 0,
-      name: '王者荣耀'
+      name: '聚餐'
     }, {
-      icon: 'picfill',
+      icon: 'recordfill',
       color: 'black',
       badge: 0,
-      name: '和平精英'
+      name: '摄影'
     }, {
       icon: 'noticefill',
       color: 'olive',
       badge: 0,
-      name: 'QQ飞车'
+      name: '交流会'
     }, {
-      icon: 'upstagefill',
+      icon: 'commandfill',
       color: 'cyan',
       badge: 0,
-      name: '第五人格'
+      name: '住宿'
     }, {
       icon: 'clothesfill',
       color: 'blue',
       badge: 0,
-      name: '超级玛丽'
+      name: '行程'
+    }, {
+      icon: 'upstagefill',
+      color: 'cyan',
+      badge: 0,
+      name: '纪念品'
+    }, {
+      icon: 'brandfill',
+      color: 'blue',
+      badge: 0,
+      name: '礼物定制'
     }],
     ziXun: [{
       title: '不管这世界阴晴圆缺只愿和春天有个约会,管这世界阴晴圆缺只愿和春天有个约会',
@@ -78,7 +90,7 @@ Page({
       tag: '周边好货',
       url: ''
     }],
-    gridCol: 3,
+    gridCol: 4,
     skin: false
   },
   onShow: function (e) {
@@ -167,15 +179,24 @@ Page({
       })
     }
   },
+  cardtap1: function () {
+    var boxheight1 = this.data.height1 == '70px' ? '140px' : '70px';
+    // 设置背景颜色数据
+    this.setData({
+      height1: boxheight1
+    });
+  },
+  cardtap2: function () {
+    var boxheight2 = this.data.height2 == '70px' ? '180px' : '70px';
+    // 设置背景颜色数据
+    this.setData({
+      height2: boxheight2
+    });
+  },
   tosearch: function () {
     wx.navigateTo({
       url: '/pages/search/search'
     });
-  },
-  showModal(e) {
-    this.setData({
-      modalName: e.currentTarget.dataset.target
-    })
   },
   hideModal(e) {
     this.setData({

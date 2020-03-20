@@ -1,4 +1,4 @@
-<view>
-<text>我是小熊
-</text>
+<!-- pages/user/user.wxml -->
+<view class="box" hover-class="none" hover-stop-propagation="false">
+  <view class="headimg"></view>
 </view>

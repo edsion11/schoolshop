@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/user/user",
     "pages/index/index",
     "pages/goods-category/goods-category",
     "pages/cart/cart",
-    "pages/user/user",
     "pages/search/search"
   ],
   "window": {
@@ -27,13 +27,13 @@
         "pagePath": "pages/goods-category/goods-category",
         "iconPath": "/images/nav-icon-category.png",
         "selectedIconPath": "/images/nav-icon-category-active.png",
-        "text": "分类"
+        "text": "找团队"
       },
       {
         "pagePath": "pages/cart/cart",
-        "iconPath": "/images/nav-icon-cart.png",
+        "iconPath": "/images/nav-icon-category.png",
         "selectedIconPath": "/images/nav-icon-cart-active.png",
-        "text": "购物车"
+        "text": "找校友"
       },
       {
         "pagePath": "pages/user/user",
