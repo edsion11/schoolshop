@@ -3,12 +3,12 @@
     <view class="cu-bar search bg-white">
       <!-- ColorUI搜索框设置 -->
       <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></view>
-      <view class="search-form round">
+      <view class="search-form round" bindtap="tosearch">
         <text class="cuIcon-search"></text>
         <input type="text" placeholder="请输入关键词搜索商品" confirm-type="search" value='{{keyWord}}' bindconfirm='goSearch'></input>
       </view>
       <view class="action">
-        <text>广州</text>
+        <text>南京</text>
         <text class="cuIcon-triangledownfill"></text>
       </view>
     </view>
@@ -37,6 +37,20 @@
       </view>
       <text>{{item.name}}</text>
     </view>
+  </view>
+  <!-- 滚动资讯 -->
+  <view class="zixun" hover-class="none" hover-stop-propagation="false">
+    <image class="zixunimg" src="/static/home-zixun.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+      <block wx:for="{{ziXun}}">
+        <navigator url="#" open-type="navigate">
+          <swiper-item>
+            <view class="swiper_item">{{item.tag}}
+              {{item.title}}</view>
+          </swiper-item>
+        </navigator>
+      </block>
+    </swiper>
   </view>
   <view class="flex">
     <view class="flex-sub bg-grey padding-sm margin-xs radius" id="box1">商品1</view>

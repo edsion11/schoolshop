@@ -64,3 +64,40 @@
   background-color: #e03997;
   height: 140px;
 }
+
+.zixun {
+  width: 100%;
+  height: 30px;
+  margin-left: 20px;
+}
+
+.zixunimg {
+  width: 10%;
+  height: 20px;
+  margin-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #a8a6a6;
+  float: left;
+}
+
+.zixunScroll {
+  width: 70%;
+  height: 20px;
+  margin-left: 10px;
+  background-color: rgb(219, 213, 213);
+  float: left;
+}
+
+.swiper_container {
+  background-color: white;
+  height: 20px;
+  width: 70%;
+  float: left;
+}
+
+.swiper_item {
+  color: #f37b1d;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 20px;
+}

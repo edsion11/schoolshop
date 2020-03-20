@@ -65,10 +65,39 @@ Page({
       badge: 0,
       name: '超级玛丽'
     }],
+    ziXun: [{
+      title: '不管这世界阴晴圆缺只愿和春天有个约会,管这世界阴晴圆缺只愿和春天有个约会',
+      tag: '生活主题',
+      url: ''
+    }, {
+      title: '不管这世界阴晴圆缺只愿和春天有个约会,管这世界阴晴圆缺只愿和春天有个约会',
+      tag: '居家攻略',
+      url: ''
+    }, {
+      title: '不管这世界阴晴圆缺只愿和春天有个约会,管这世界阴晴圆缺只愿和春天有个约会',
+      tag: '周边好货',
+      url: ''
+    }],
     gridCol: 3,
     skin: false
   },
-
+  onShow: function (e) {
+    this.setData({
+      ziXun: [{
+        title: '百丽集团童鞋旗舰店，领券直降500元',
+        tag: '生活主题',
+        url: ''
+      }, {
+        title: '格力电风扇，家用落地扇',
+        tag: '居家攻略',
+        url: ''
+      }, {
+        title: '米其林品牌打折日，品牌直降',
+        tag: '周边好货',
+        url: ''
+      }]
+    });
+  },
   onLoad() {
     this.towerSwiper('swiperList');
     // 初始化towerSwiper 传已有的数组名即可
@@ -137,6 +166,11 @@ Page({
         swiperList: list
       })
     }
+  },
+  tosearch: function () {
+    wx.navigateTo({
+      url: '/pages/search/search'
+    });
   },
   showModal(e) {
     this.setData({

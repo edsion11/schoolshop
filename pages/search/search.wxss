@@ -1,0 +1,4 @@
+/* pages/search/search.wxss */
+.searchbtn {
+  color: rgb(248, 176, 82);
+}

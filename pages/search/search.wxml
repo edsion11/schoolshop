@@ -1,0 +1,12 @@
+<!-- pages/search/search.wxml -->
+<view class="cu-bar search bg-white">
+  <!-- ColorUI搜索框设置 -->
+  <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></view>
+  <view class="search-form round" bindtap="tosearch">
+    <text class="cuIcon-search"></text>
+    <input type="text" placeholder="请输入关键词搜索商品" confirm-type="search" value='{{keyWord}}' bindconfirm='goSearch'></input>
+  </view>
+  <view class="action">
+    <text bindtap="searchToGoods(keyWord)" class="searchbtn">搜索</text>
+  </view>
+</view>
