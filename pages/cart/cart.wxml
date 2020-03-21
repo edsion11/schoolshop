@@ -1,0 +1,4 @@
+<!-- pages/cart/cart.wxml -->
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">团队列表</view>
+</cu-custom>

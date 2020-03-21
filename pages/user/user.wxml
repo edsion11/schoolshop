@@ -1,4 +1,7 @@
 <!-- pages/user/user.wxml -->
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">我的信息</view>
+</cu-custom>
 <view class="box" hover-class="none" hover-stop-propagation="false">
   <view class="headimg"></view>
 </view>

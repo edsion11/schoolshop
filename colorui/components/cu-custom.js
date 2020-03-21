@@ -14,7 +14,7 @@ Component({
     bgColor: {
       type: String,
       default: ''
-    },
+    }, 
     isCustom: {
       type: [Boolean, String],
       default: false
@@ -31,11 +31,11 @@ Component({
   /**
    * 组件的初始数据
    */
-  /* data: {
+  data: {
     StatusBar: app.globalData.StatusBar,
     CustomBar: app.globalData.CustomBar,
     Custom: app.globalData.Custom
-  }, */
+  },
   /**
    * 组件的方法列表
    */
@@ -45,7 +45,7 @@ Component({
         delta: 1
       });
     },
-    toHome() {
+    toHome(){
       wx.reLaunch({
         url: '/pages/index/index',
       })

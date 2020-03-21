@@ -1,22 +1,22 @@
 {
   "pages": [
+    "pages/drawer/drawer",
     "pages/user/user",
+
     "pages/index/index",
-    "pages/goods-category/goods-category",
     "pages/cart/cart",
     "pages/search/search"
   ],
   "window": {
-    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#8799a3",
     "navigationBarTitleText": "商场test",
-    "navigationBarTextStyle": "white",
-    "enablePullDownRefresh": false
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#8a8a8a",
     "selectedColor": "#d2364c",
-    "backgroundColor": "#fff",
+    "backgroundColor": "#e7ebed",
     "list": [{
         "pagePath": "pages/index/index",
         "iconPath": "/images/nav-icon-home.png",
@@ -24,13 +24,13 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/goods-category/goods-category",
+        "pagePath": "pages/cart/cart",
         "iconPath": "/images/nav-icon-category.png",
         "selectedIconPath": "/images/nav-icon-category-active.png",
         "text": "找团队"
       },
       {
-        "pagePath": "pages/cart/cart",
+        "pagePath": "pages/drawer/drawer",
         "iconPath": "/images/nav-icon-category.png",
         "selectedIconPath": "/images/nav-icon-cart-active.png",
         "text": "找校友"
