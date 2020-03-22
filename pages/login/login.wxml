@@ -1,0 +1,8 @@
+<!-- pages/login/login.wxml -->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText" bindtap="BackPage">返回</view>
+  <view slot="content">登录</view>
+</cu-custom>
+<view class="loginBody">
+  <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">点我了解你</button>
+</view>

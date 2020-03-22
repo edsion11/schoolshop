@@ -10,19 +10,67 @@
   --gradualBlue: linear-gradient(45deg, #0081ff, #1cbbb4);
 }
 
-.box {
-  width: 100%;
-  height: 220px;
+
+.myhead {
   background-image: var(--gradualBlue);
+  display: flex;
+  width: 100%;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
 }
 
-.headimg {
-  position: relative;
-  top: 50%;
-  margin-top: -80px;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-image: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1895450604,2300798710&fm=15&gp=0.jpg);
-  background-size: cover;
+.mymiddleHead {
+  background: transparent;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
+
+.touxiang {
+  display: inline-flex;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.touxiang image {
+  height: 50px;
+}
+
+.kong {
+  display: inline-flex;
+  background-color: transparent;
+  height: 7px;
+}
+
+.text {
+  display: inline-flex;
+  height: 50px;
+  color: aliceblue;
+  flex-direction: column;
+}
+
+.text1 {
+  display: inline-flex;
+  height: 20px;
+}
+
+.text2 {
+  font-size: 12px;
+  height: 20px;
+}
+
+.direction {
+  width: 150px;
+  display: inline-flex;
+  background-color: transparent;
+  flex-direction: row-reverse;
+}
+
+.direction image {
+  width: 20px;
+  height: 20px;
+}
+

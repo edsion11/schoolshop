@@ -1,4 +1,8 @@
 <!-- pages/search/search.wxml -->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText" bindtap="BackPage">返回</view>
+  <view slot="content">搜索</view>
+</cu-custom>
 <view class="cu-bar search bg-white">
   <!-- ColorUI搜索框设置 -->
   <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></view>

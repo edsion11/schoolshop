@@ -1,11 +1,12 @@
 {
   "pages": [
-    "pages/drawer/drawer",
-    "pages/user/user",
-
     "pages/index/index",
+    "pages/login/login",
+    "pages/user/user",
+    "pages/drawer/drawer",
     "pages/cart/cart",
     "pages/search/search"
+
   ],
   "window": {
     "navigationBarBackgroundColor": "#8799a3",

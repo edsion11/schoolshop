@@ -1,5 +1,9 @@
 //app.js
 App({
+  data: {
+    username: '',
+    userimg: ''
+  },
   onLaunch: function () {
     if (wx.cloud) {
       wx.cloud.init({

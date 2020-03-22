@@ -1,13 +1,12 @@
-// pages/user/user.js
-const app = getApp();
+// pages/login/login.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    username: '',
     userimg: ''
+
   },
 
   /**
@@ -65,9 +64,22 @@ Page({
   onShareAppMessage: function () {
 
   },
-  toLogin: function () {
-    wx.navigateTo({
-      url: '/pages/login/login'
-    });
+  onGotUserInfo: function (e) {
+    console.log(e.detail.errMsg)
+    console.log(e.detail.userInfo.nickName)
+    console.log(e.detail.userInfo.avatarUrl)
+    this.userimg = e.detail.userInfo.avatarUrl
+    console.log(e.detail.rawData)
+    wx.showModal({
+      title: '提示',
+      content: e.detail.userInfo.nickName + '你好',
+      success: function (res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
   },
 })
