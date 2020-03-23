@@ -1,6 +1,6 @@
 /* pages/login/login.wxss */
 .loginBody {
-  background-color: #e1d7f0;
+  /*   background-color: #e1d7f0; */
   width: 100%;
   height: 900px;
 }
@@ -21,4 +21,143 @@
 
 button {
   margin: 10px;
+}
+
+.bacimg {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.head {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head image {
+  width: 70px;
+  height: 70px;
+}
+
+.phonesign {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.passwordsign {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smallhead {
+  width: 70%;
+  height: 50px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+}
+
+.smallhead input {
+  width: 60%;
+  margin-left: 20px;
+  margin-top: 13px;
+}
+
+.phonesign .smallhead image {
+  margin-top: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.passwordsign .smallhead image {
+  margin-top: 13px;
+  margin-left: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.forget {
+  width: 100%;
+  height: 30px;
+  margin-top: 15px;
+}
+
+.forgetpassw {
+  height: 12px;
+  margin-right: 60px;
+}
+
+.forget text {
+  font-size: 13px;
+  float: right;
+}
+
+.signin {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#signbtn {
+  width: 230px;
+  height: 35px;
+  margin: 0 auto;
+}
+
+.zhanghao {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: orange;
+}
+
+#signto {
+  color: black;
+  font-size: 13px;
+}
+
+.white {
+  width: 100%;
+  height: 100px;
+}
+
+.wesign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wesign image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.wechatsign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wesign text {
+  font-size: 14px;
+}
+
+.animo {
+  background-color: #fff;
 }

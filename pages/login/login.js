@@ -5,8 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userimg: ''
-
+    userimg: '',
+    phoneNumber: '',
+    password: ''
   },
 
   /**

@@ -6,8 +6,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    username: '',
-    userimg: ''
+    username: '艾瑞莉亚',
+    usertext: '欢迎您！',
+    userimg: '',
+    logged: true,
+    loggedin: false
   },
 
   /**
@@ -66,6 +69,10 @@ Page({
 
   },
   toLogin: function () {
+    /* this.setData({
+      logged: false,
+      loggedin: true
+    }) */
     wx.navigateTo({
       url: '/pages/login/login'
     });

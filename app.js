@@ -1,7 +1,8 @@
 //app.js
 App({
   data: {
-    username: '',
+    username: '注册 / 登录',
+    usertext: '新用户登录送999元现金红包',
     userimg: ''
   },
   onLaunch: function () {

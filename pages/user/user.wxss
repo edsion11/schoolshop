@@ -74,3 +74,20 @@
   height: 20px;
 }
 
+.mydingdan {
+  width: 100%;
+  height: 200px;
+  background-color: #d2f1f0;
+}
+
+.myfuli {
+  width: 100%;
+  height: 200px;
+  background-color: #cce6ff;
+}
+
+.myfuwu {
+  width: 100%;
+  height: 200px;
+  background-color: #e1d7f0;
+}

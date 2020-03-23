@@ -7,13 +7,21 @@
     <view class="touxiang">
       <image src="../../static/头像.svg" />
     </view>
-    <view class="text">
+    <view class="text" wx:if="{{logged}}">
       <view class="kong"></view>
-      <view class="text1">注册 / 登录</view>
-      <view class="text2">新用户登录最高可得999元现金奖励</view>
+      <view class="text1">注册 / 登陆</view>
+      <view class="text2">新用户登录最高可得9999元</view>
+    </view>
+    <view class="text" wx:if="{{loggedin}}">
+      <view class="kong"></view>
+      <view class="text1">{{username}}</view>
+      <view class="text2">{{usertext}}</view>
     </view>
     <view class="direction">
       <image src="../../static/箭头.svg" />
     </view>
   </view>
 </view>
+<view class="mydingdan">我的订单</view>
+<view class="myfuli">我的福利</view>
+<view class="myfuwu">我的服务</view>

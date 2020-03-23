@@ -4,5 +4,38 @@
   <view slot="content">登录</view>
 </cu-custom>
 <view class="loginBody">
-  <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">点我了解你</button>
+  <view class="head">
+    <image src="../../static/学校.svg"></image>
+  </view>
+  <view class="phonesign">
+    <view class="smallhead">
+      <image src="../../static/手机.svg" />
+      <input type="number" value="{{phoneNumber}}" placeholder="请输入您的电话号码"></input>
+    </view>
+  </view>
+  <view class="passwordsign">
+    <view class="smallhead">
+      <image src="../../static/锁.svg" />
+      <input type="password" value="{{password}}" placeholder="请输入您的密码"></input>
+    </view>
+  </view>
+  <view class="forget">
+    <text class="forgetpassw">忘记密码？</text>
+  </view>
+  <view class="signin">
+    <button class="cu-btn round bg-blue shadow" role="button" aria-disabled="true" id="signbtn">
+      登录
+    </button>
+  </view>
+  <view class="zhanghao">
+    <text id="signto">还没有账号？</text>
+    立即注册
+  </view>
+  <view class="white"></view>
+  <view class="wechatsign">
+    <view class="wesign">
+      <image src="../../static/微信.svg" />
+      <text>第三方登录</text>
+    </view>
+  </view>
 </view>
