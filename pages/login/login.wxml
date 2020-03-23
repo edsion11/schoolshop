@@ -5,17 +5,17 @@
 </cu-custom>
 <view class="loginBody">
   <view class="head">
-    <image src="../../static/学校.svg"></image>
+    <image src="../../static/xuexiao.svg"></image>
   </view>
   <view class="phonesign">
     <view class="smallhead">
-      <image src="../../static/手机.svg" />
+      <image src="../../static/shouji.svg" />
       <input type="number" value="{{phoneNumber}}" placeholder="请输入您的电话号码"></input>
     </view>
   </view>
   <view class="passwordsign">
     <view class="smallhead">
-      <image src="../../static/锁.svg" />
+      <image src="../../static/suo.svg" />
       <input type="password" value="{{password}}" placeholder="请输入您的密码"></input>
     </view>
   </view>
@@ -34,7 +34,7 @@
   <view class="white"></view>
   <view class="wechatsign">
     <view class="wesign">
-      <image src="../../static/微信.svg" />
+      <image src="../../static/weixin.svg" />
       <text>第三方登录</text>
     </view>
   </view>

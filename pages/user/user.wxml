@@ -5,7 +5,7 @@
 <view class="myhead" bindtap="toLogin">
   <view class="mymiddleHead">
     <view class="touxiang">
-      <image src="../../static/头像.svg" />
+      <image src="/static/touxiang.svg" />
     </view>
     <view class="text" wx:if="{{logged}}">
       <view class="kong"></view>
@@ -18,7 +18,7 @@
       <view class="text2">{{usertext}}</view>
     </view>
     <view class="direction">
-      <image src="../../static/箭头.svg" />
+      <image src="../../static/jiantou.svg" />
     </view>
   </view>
 </view>
