@@ -74,17 +74,91 @@
   height: 20px;
 }
 
+.myaction {
+  display: flex;
+  margin-left: 10%;
+  margin-top: -10%;
+  border-radius: 10px;
+  width: 80%;
+  height: 80px;
+  background: var(--gradualBlue);
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.myaction .qiandao {
+  margin-top: 8px;
+  display: flex;
+  width: 110px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.myaction .wallet {
+  margin-top: 8px;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.myaction .zuji {
+  margin-top: 8px;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.myaction .qiandao image {
+  width: 40px;
+  height: 40px;
+}
+
+.myaction .wallet image {
+  width: 40px;
+  height: 40px;
+}
+
+.myaction .zuji image {
+  width: 40px;
+  height: 40px;
+}
+
+.myaction .qiandao text {
+  display: flexbox;
+  font-size: 13px;
+  color: white;
+}
+
+.myaction .wallet text {
+  display: flexbox;
+  font-size: 13px;
+  color: white;
+}
+
+.myaction .zuji text {
+  display: flexbox;
+  color: white;
+  font-size: 13px;
+}
+
 .mydingdan {
   width: 100%;
   height: 200px;
-  background-color: #d2f1f0;
+  background-color: #cce6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.myfuli {
-  width: 100%;
-  height: 200px;
-  background-color: #cce6ff;
-}
+.mydingdan .dingdantext text {}
 
 .myfuwu {
   width: 100%;

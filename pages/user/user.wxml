@@ -22,6 +22,26 @@
     </view>
   </view>
 </view>
-<view class="mydingdan">我的订单</view>
-<view class="myfuli">我的福利</view>
+<view class="myaction">
+  <view class="qiandao">
+    <image src="../../static/qiandao.svg" />
+    <text>签到</text>
+  </view>
+  <view class="wallet">
+    <image src="../../static/wallet.svg" />
+    <text>钱包</text>
+  </view>
+  <view class="zuji">
+    <image src="../../static/zuji.svg" />
+    <text>足迹</text>
+  </view>
+</view>
+<view class="mydingdan">
+  <view class="dingdantext">
+    <text>我的订单</text>
+    <text>查看全部</text>
+    <image src="../../static/jiantou.svg" />
+  </view>
+  <view class="dingdanimg"></view>
+</view>
 <view class="myfuwu">我的服务</view>

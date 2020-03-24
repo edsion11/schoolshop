@@ -33,7 +33,7 @@
   </view>
   <view class="white"></view>
   <view class="wechatsign">
-    <view class="wesign">
+    <view class="wesign"  bindtap="onGotUserInfo" >
       <image src="../../static/weixin.svg" />
       <text>第三方登录</text>
     </view>
