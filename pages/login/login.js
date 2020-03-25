@@ -1,4 +1,6 @@
 // pages/login/login.js
+const app = getApp()
+const db = wx.cloud.database()
 Page({
 
   /**
@@ -7,13 +9,27 @@ Page({
   data: {
     userimg: '',
     phoneNumber: '',
-    password: ''
+    password: '',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.getSetting({
+      success: function (res) {
+        if (res.authSetting['scope.userInfo']) {
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
+          wx.getUserInfo({
+            success: function (res) {
+              console.log(res.userInfo)
+            }
+          })
+        }
+      }
+    })
+
+
 
   },
 
@@ -65,22 +81,34 @@ Page({
   onShareAppMessage: function () {
 
   },
-  onGotUserInfo: function (e) {
-    console.log(e.detail.errMsg)
-    console.log(e.detail.userInfo.nickName)
-    console.log(e.detail.userInfo.avatarUrl)
-    this.userimg = e.detail.userInfo.avatarUrl
-    console.log(e.detail.rawData)
-    wx.showModal({
-      title: '提示',
-      content: e.detail.userInfo.nickName + '你好',
-      success: function (res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
-        } else if (res.cancel) {
-          console.log('用户点击取消')
+  bindGetUserInfo: function (event) {
+    //console.log(event.detail.userInfo)
+    let userInfo = event.detail.userInfo
+    if(!this.logged&&userInfo){
+      db.collection('users').add({
+        data:{
+          userPhoto: userInfo.avatarUrl,
+          nickName :userInfo.nickName,
+          links :0,
+          time : new Date(),
+          phoneNumber: '',
         }
-      }
-    })
-  },
+      }).then((res)=>{
+        db.collection('users').doc(res._id).get().then((res)=>{
+          app.userInfo = Object.assign(app.userInfo,res.data)
+          console.log(app.userInfo.userPhoto)
+          var pages = getCurrentPages();
+          var currPage = pages[pages.length - 1];
+          var prevPage = pages[pages.length - 2];
+          prevPage.setData({
+            userPhoto : app.userInfo.userPhoto,
+            nickName : app.userInfo.nickName,
+            logged:true,
+          })
+          wx.navigateBack();
+        })
+      });
+    }
+
+  }
 })

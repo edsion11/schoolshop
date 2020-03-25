@@ -1,0 +1,4 @@
+<!--pages/dingdan/dingdan.wxml-->
+<cu-custom isBack="{{true}}">
+  <view slot="content" style="color:black;font-weight:150">我的订单</view>
+</cu-custom>

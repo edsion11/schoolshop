@@ -1,25 +1,29 @@
 {
   "pages": [
-    "pages/user/user",
     "pages/index/index",
-
+    "pages/user/user",
     "pages/login/login",
     "pages/drawer/drawer",
     "pages/cart/cart",
-    "pages/search/search"
-
+    "pages/search/search",
+    "pages/dingdan/dingdan",
+    "pages/notice/notice",
+    "pages/settings/settings",
+    "pages/fankui/fankui"
   ],
   "window": {
     "navigationBarBackgroundColor": "#8799a3",
     "navigationBarTitleText": "商场test",
     "navigationStyle": "custom",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "#8a8a8a",
     "selectedColor": "#d2364c",
     "backgroundColor": "#e7ebed",
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/index/index",
         "iconPath": "/images/nav-icon-home.png",
         "selectedIconPath": "/images/nav-icon-home-active.png",

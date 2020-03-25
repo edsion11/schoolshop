@@ -1,0 +1,4 @@
+/* pages/dingdan/dingdan.wxss */
+page{
+  background-color: #cce6ff
+}

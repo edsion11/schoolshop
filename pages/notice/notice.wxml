@@ -1,0 +1,4 @@
+<!--pages/notice/notice.wxml-->
+<cu-custom isBack="{{true}}">
+  <view slot="content" style="color:black;font-weight:150">通知</view>
+</cu-custom>

@@ -1,0 +1,4 @@
+/* pages/fankui/fankui.wxss */
+page{
+  background-color: #cce6ff
+}

@@ -1,0 +1,4 @@
+/* pages/notice/notice.wxss */
+page{
+  background-color: #cce6ff
+}

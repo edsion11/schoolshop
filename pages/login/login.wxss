@@ -154,8 +154,9 @@ button {
   justify-content: center;
 }
 
-.wesign text {
+.wesign button {
   font-size: 14px;
+  border: none
 }
 
 .animo {
