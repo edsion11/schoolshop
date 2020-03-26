@@ -17,8 +17,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-  },
+  onLoad: function (options) {},
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -77,7 +76,7 @@ Page({
       url: '/pages/login/login'
     });
   },
-  navToDingdan:function(){
+  navToDingdan: function () {
     wx.navigateTo({
       url: '/pages/dingdan/dingdan',
     })
@@ -95,6 +94,21 @@ Page({
   navToFankui: function () {
     wx.navigateTo({
       url: '/pages/fankui/fankui',
+    })
+  },
+  navToQiandao: function () {
+    wx.navigateTo({
+      url: '/pages/qiandao/qiandao',
+    })
+  },
+  navToWallet: function () {
+    wx.navigateTo({
+      url: '/pages/wallet/wallet',
+    })
+  },
+  navToFoot: function () {
+    wx.navigateTo({
+      url: '/pages/foot/foot',
     })
   },
 })

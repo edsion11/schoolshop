@@ -1,0 +1,4 @@
+<!--pages/wallet/wallet.wxml-->
+<cu-custom isBack="{{true}}">
+  <view slot="content" style="color:black;font-weight:150">我的钱包</view>
+</cu-custom>

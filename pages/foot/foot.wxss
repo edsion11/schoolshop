@@ -1,0 +1,4 @@
+/* pages/foot/foot.wxss */
+page{
+  background-color: white;
+}

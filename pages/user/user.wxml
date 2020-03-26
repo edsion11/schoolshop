@@ -1,5 +1,5 @@
 <!-- pages/user/user.wxml -->
-<cu-custom >
+<cu-custom>
   <view slot="content" style="color:white;font-weight:150">我的信息</view>
 </cu-custom>
 <view class="myhead" bindtap="toLogin">
@@ -23,15 +23,15 @@
   </view>
 </view>
 <view class="myaction">
-  <view class="qiandao">
+  <view class="qiandao" bindtap="navToQiandao">
     <image src="../../static/qiandao.svg" />
     <text>签到</text>
   </view>
-  <view class="wallet">
+  <view class="wallet" bindtap="navToWallet">
     <image src="../../static/wallet.svg" />
     <text>钱包</text>
   </view>
-  <view class="zuji">
+  <view class="zuji" bindtap="navToFoot">
     <image src="../../static/zuji.svg" />
     <text>足迹</text>
   </view>
@@ -45,7 +45,7 @@
   </view>
   <view class="dingdanimg"></view>
 </view>
-<view class="mydingdan"bindtap="navToNotice">
+<view class="mydingdan" bindtap="navToNotice">
   <view class="dingdantext">
     <text>通知</text>
     <view class="all">
@@ -54,7 +54,7 @@
   </view>
   <view class="dingdanimg"></view>
 </view>
-<view class="mydingdan"bindtap="navToSettings">
+<view class="mydingdan" bindtap="navToSettings">
   <view class="dingdantext">
     <text>设置</text>
     <view class="all">
@@ -63,7 +63,7 @@
   </view>
   <view class="dingdanimg"></view>
 </view>
-<view class="mydingdan" id="fankui"bindtap="navTofankui">
+<view class="mydingdan" id="fankui" bindtap="navToFankui">
   <view class="dingdantext">
     <text>反馈</text>
     <view class="all">

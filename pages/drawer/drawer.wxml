@@ -2,6 +2,15 @@
 		<cu-custom bgColor="bg-gradual-blue">
 				<view slot="content">联系人列表</view>
 		</cu-custom>
+		<view class="header">
+				<view class="schoolMetting">
+						<text>校友会</text>
+				</view>
+				<view class="kong"></view>
+				<view class="schoolMetting">
+						<text>高校论坛</text>
+				</view>
+		</view>
 		<view class="bodyli">
 				<view class="cont" hover-class="none" hover-stop-propagation="false">
 						<view class="llcon">您还有添加联系人，尝试添加校友开始一段美好的回忆吧！</view>

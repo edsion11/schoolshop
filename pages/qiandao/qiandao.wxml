@@ -1,0 +1,4 @@
+<!--pages/qiandao/qiandao.wxml-->
+<cu-custom isBack="{{true}}">
+  <view slot="content" style="color:black;font-weight:150">签到</view>
+</cu-custom>

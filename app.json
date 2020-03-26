@@ -1,15 +1,19 @@
 {
   "pages": [
+    "pages/cart/cart",
     "pages/index/index",
     "pages/user/user",
     "pages/login/login",
     "pages/drawer/drawer",
-    "pages/cart/cart",
+
     "pages/search/search",
     "pages/dingdan/dingdan",
     "pages/notice/notice",
     "pages/settings/settings",
-    "pages/fankui/fankui"
+    "pages/fankui/fankui",
+    "pages/wallet/wallet",
+    "pages/qiandao/qiandao",
+    "pages/foot/foot"
   ],
   "window": {
     "navigationBarBackgroundColor": "#8799a3",
@@ -38,7 +42,7 @@
       {
         "pagePath": "pages/drawer/drawer",
         "iconPath": "/images/nav-icon-category.png",
-        "selectedIconPath": "/images/nav-icon-cart-active.png",
+        "selectedIconPath": "/images/nav-icon-category-active.png",
         "text": "找校友"
       },
       {

@@ -1,0 +1,4 @@
+/* pages/qiandao/qiandao.wxss */
+page{
+  background-color: white;
+}

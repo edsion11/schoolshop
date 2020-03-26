@@ -1,0 +1,4 @@
+<!--pages/foot/foot.wxml-->
+<cu-custom isBack="{{true}}">
+  <view slot="content" style="color:black;font-weight:150">足迹</view>
+</cu-custom>

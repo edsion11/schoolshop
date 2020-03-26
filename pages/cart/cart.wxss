@@ -1,1 +1,7 @@
 /* pages/cart/cart.wxss */
+page{
+  background-color: white;
+}
+#box1{
+  margin-top: 0;
+}
