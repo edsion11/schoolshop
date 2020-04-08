@@ -1,11 +1,10 @@
 {
   "pages": [
-    "pages/cart/cart",
     "pages/index/index",
+    "pages/cart/cart",
     "pages/user/user",
     "pages/login/login",
     "pages/drawer/drawer",
-
     "pages/search/search",
     "pages/dingdan/dingdan",
     "pages/notice/notice",
@@ -13,7 +12,8 @@
     "pages/fankui/fankui",
     "pages/wallet/wallet",
     "pages/qiandao/qiandao",
-    "pages/foot/foot"
+    "pages/foot/foot",
+    "pages/chat/chat"
   ],
   "window": {
     "navigationBarBackgroundColor": "#8799a3",
@@ -26,8 +26,7 @@
     "color": "#8a8a8a",
     "selectedColor": "#d2364c",
     "backgroundColor": "#e7ebed",
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "iconPath": "/images/nav-icon-home.png",
         "selectedIconPath": "/images/nav-icon-home-active.png",

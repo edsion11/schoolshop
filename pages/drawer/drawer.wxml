@@ -16,7 +16,7 @@
 						<view class="llcon">您还有添加联系人，尝试添加校友开始一段美好的回忆吧！</view>
 				</view>
 				<view class='padding margin text-center'>
-						<view class='listbtn' bindtap="showModal" data-target="viewModal">点我开始探索</view>
+						<view class='listbtn' bindtap="showModal" data-target="viewModal">点我展开联系人列表</view>
 				</view>
 		</view>
 </scroll-view>

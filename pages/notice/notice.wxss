@@ -1,4 +1,25 @@
 /* pages/notice/notice.wxss */
-page{
-  background-color: #cce6ff
+page {
+  background-color: #cce6ff;
+}
+.content-notice {
+  background-color: #cce6dd;
+  display: flex;
+
+  align-items: center;
+  width: 100%;
+  height: 700px;
+  flex-flow: column;
+}
+.notice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 40px;
+  background-color: var(--cyan);
+  border-radius: 5px;
+  color: var(--white);
+  margin: 10px 0;
+  border: 1px solid gray;
 }

@@ -2,3 +2,6 @@
 <cu-custom isBack="{{true}}">
   <view slot="content" style="color:black;font-weight:150">反馈</view>
 </cu-custom>
+<view>
+<textarea ></textarea>
+</view>

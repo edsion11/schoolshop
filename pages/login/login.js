@@ -2,7 +2,6 @@
 const app = getApp()
 const db = wx.cloud.database()
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -23,92 +22,79 @@ Page({
           wx.getUserInfo({
             success: function (res) {
               console.log(res.userInfo)
-            }
+            },
           })
         }
-      }
+      },
     })
-
-
-
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
-
-  },
+  onReady: function () {},
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-
-  },
+  onShow: function () {},
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
-
-  },
+  onHide: function () {},
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
-
-  },
+  onUnload: function () {},
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
-
-  },
+  onPullDownRefresh: function () {},
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
-
-  },
+  onReachBottom: function () {},
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
-  },
+  onShareAppMessage: function () {},
   bindGetUserInfo: function (event) {
-    //console.log(event.detail.userInfo)
     let userInfo = event.detail.userInfo
-    if(!this.logged&&userInfo){
-      db.collection('users').add({
-        data:{
-          userPhoto: userInfo.avatarUrl,
-          nickName :userInfo.nickName,
-          links :0,
-          time : new Date(),
-          phoneNumber: '',
-        }
-      }).then((res)=>{
-        db.collection('users').doc(res._id).get().then((res)=>{
-          app.userInfo = Object.assign(app.userInfo,res.data)
-          console.log(app.userInfo.userPhoto)
-          var pages = getCurrentPages();
-          var currPage = pages[pages.length - 1];
-          var prevPage = pages[pages.length - 2];
-          prevPage.setData({
-            userPhoto : app.userInfo.userPhoto,
-            nickName : app.userInfo.nickName,
-            logged:true,
-          })
-          wx.navigateBack();
+    if (!this.logged && userInfo) {
+      db.collection('users')
+        .add({
+          data: {
+            userPhoto: userInfo.avatarUrl,
+            nickName: userInfo.nickName,
+            links: 0,
+            time: new Date(),
+            phoneNumber: '',
+          },
         })
-      });
+        .then((res) => {
+          db.collection('users')
+            .doc(res._id)
+            .get()
+            .then((res) => {
+              app.userInfo = Object.assign(app.userInfo, res.data)
+              var pages = getCurrentPages()
+              var currPage = pages[pages.length - 1]
+              var prevPage = pages[pages.length - 2]
+              wx.setStorageSync('username', app.userInfo.nickName)
+              wx.setStorageSync('userPhoto', app.userInfo.userPhoto)
+              prevPage.setData({
+                userPhoto: app.userInfo.userPhoto,
+                nickName: app.userInfo.nickName,
+                logged: true,
+              })
+              wx.navigateBack()
+            })
+        })
     }
-
-  }
+  },
 })

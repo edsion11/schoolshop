@@ -1,4 +1,30 @@
-<!--pages/notice/notice.wxml-->
+<!-- pages/notice/notice.wxml -->
 <cu-custom isBack="{{true}}">
   <view slot="content" style="color:black;font-weight:150">通知</view>
 </cu-custom>
+<view class="content-notice">
+  <view class="notice">
+    <text>10:00</text>
+    您有一条新的通知，请查看！
+  </view>
+  <view class="notice">
+    <text>10:00</text>
+    您有一条新的通知，请查看！
+  </view>
+  <view class="notice">
+    <text>10:00</text>
+    您有一条新的通知，请查看！
+  </view>
+  <view class="notice">
+    <text>10:00</text>
+    您有一条新的通知，请查看！
+  </view>
+  <view class="notice">
+    <text>10:00</text>
+    您有一条新的通知，请查看！
+  </view>
+  <view class="notice">
+    <text>10:00</text>
+    您有一条新的通知，请查看！
+  </view>
+</view>
