@@ -27,14 +27,16 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    /* if (wx.getStorageSync('username') && wx.getStorageSync('userPhoto')) {
-      this.nickName = wx.getStorageSync('username')
-      this.userPhoto = wx.getStorageSync('userPhoto')
-      this.logged = true
+    if (wx.getStorageSync('username') || wx.getStorageSync('userPhoto')) {
+      this.setData({
+        logged: true,
+        nickName: wx.getStorageSync('username'),
+        userPhoto: wx.getStorageSync('userPhoto'),
+      })
     } else {
       this.nickName = ''
       this.userPhoto = '../../static/touxiang.svg'
-    } */
+    }
   },
 
   /**

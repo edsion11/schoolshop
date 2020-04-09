@@ -9,6 +9,7 @@ Page({
     userimg: '',
     phoneNumber: '',
     password: '',
+    loggedIn: 'false',
   },
 
   /**
@@ -64,8 +65,14 @@ Page({
    */
   onShareAppMessage: function () {},
   bindGetUserInfo: function (event) {
+    console.log(this.loggedIn)
     let userInfo = event.detail.userInfo
-    if (!this.logged && userInfo) {
+    if (wx.getStorageSync('username')) {
+      wx.showModal({
+        title: '',
+        content: '您已登录，是否重新登录',
+      })
+    } else {
       db.collection('users')
         .add({
           data: {
@@ -91,6 +98,13 @@ Page({
                 userPhoto: app.userInfo.userPhoto,
                 nickName: app.userInfo.nickName,
                 logged: true,
+              })
+              currPage.setData({
+                loggedIn: true,
+              })
+              wx.showToast({
+                title: '登录成功',
+                icon: '/success',
               })
               wx.navigateBack()
             })
