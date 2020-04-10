@@ -1,7 +1,22 @@
-<!--pages/fankui/fankui.wxml-->
+<!-- pages/fankui/fankui.wxml -->
 <cu-custom isBack="{{true}}">
   <view slot="content" style="color:black;font-weight:150">反馈</view>
 </cu-custom>
 <view>
-<textarea ></textarea>
+  <textarea id="text" bindinput="adInputChange" auto-focus class="inputcontent" confirm-type="send" placeholder="请输入您的意见！" value="{{inputInfo}}"></textarea>
+  <view>
+    <view class="niNa">
+      <text class="niName">是否匿名</text>
+      <switch checked="{{true}}" type="switch" color="" bindchange="" />
+    </view>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">日期选择</view>
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange">
+      <view class="picker">{{date}}</view>
+    </picker>
+  </view>
+  <view class="padding flex flex-direction">
+    <button class="cu-btn bg-blue margin-tb-sm lg" form-type="submit" bindtap="cons">提交</button>
+  </view>
 </view>

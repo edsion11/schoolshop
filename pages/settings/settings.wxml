@@ -1,4 +1,36 @@
-<!--pages/settings/settings.wxml-->
+<!-- pages/settings/settings.wxml -->
 <cu-custom isBack="{{true}}">
   <view slot="content" style="color:black;font-weight:150">设置</view>
 </cu-custom>
+<view class="settings" style="width:100%;">
+  <view class="cu-item">
+    <view style="width:90%">
+      <text class="text-grey">个人信息</text>
+    </view>
+    <image class="dir" src="/static/jiantou.svg"></image>
+  </view>
+  <view class="cu-item">
+    <view style="width:90%">
+      <text class="text-grey">手机号</text>
+    </view>
+    <image class="dir" src="/static/jiantou.svg"></image>
+  </view>
+  <view class="cu-item">
+    <view style="width:90%">
+      <text class="text-grey">支付信息</text>
+    </view>
+    <image class="dir" src="/static/jiantou.svg"></image>
+  </view>
+  <view class="cu-item">
+    <view style="width:90%">
+      <text class="text-grey">版本信息</text>
+    </view>
+    <image class="dir" src="/static/jiantou.svg"></image>
+  </view>
+  <view class="cu-item">
+    <view style="width:90%">
+      <text class="text-grey">相关凭证</text>
+    </view>
+    <image class="dir" src="/static/jiantou.svg"></image>
+  </view>
+</view>

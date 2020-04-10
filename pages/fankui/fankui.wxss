@@ -1,4 +1,27 @@
 /* pages/fankui/fankui.wxss */
-page{
-  background-color: #cce6ff
+@import '/colorui/icon.wxss';
+page {
+  background-color: #cce6ff;
+}
+.inputcontent {
+  width: 80%;
+  height: 100px;
+  border-radius: 5px;
+  margin: 0 auto;
+  border: 1px solid #8795a3;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.niNa {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.niName {
+  margin-left: 10%;
+}
+.cu-form-group {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
 }

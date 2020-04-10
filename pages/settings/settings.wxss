@@ -1,4 +1,24 @@
 /* pages/settings/settings.wxss */
-page{
-  background-color: #cce6ff
+page {
+  background-color: #cce6ff;
+}
+.settings {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #8799a3;
+}
+.cu-item {
+  width: 100%;
+  background-color: #fff;
+  height: 50px;
+  border-top: gray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #8799a3;
+}
+.cu-item image {
+  width: 25px;
+  height: 25px;
+  margin-left: 5%;
 }
