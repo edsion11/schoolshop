@@ -1,4 +1,16 @@
-/* pages/qiandao/qiandao.wxss */
-page{
-  background-color: white;
+@import '../../template/calendar/index.wxss';
+
+.calendar-wrap {
+  padding: 0 10rpx;
+  height: 100vh;
+}
+.dianji {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #88d2ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -33,7 +33,7 @@
   </view>
   <view class="white"></view>
   <view class="wechatsign">
-    <view class="wesign"  bindtap="onGotUserInfo" >
+    <view class="wesign">
       <image src="../../static/weixin.svg" />
       <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" hover-class="none">微信快速登录</button>
     </view>

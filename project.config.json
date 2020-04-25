@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"enhance": true,
 		"postcss": true,
@@ -71,6 +71,12 @@
 					"name": "反馈页面",
 					"pathName": "pages/fankui/fankui",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/qiandao/qiandao",
+					"pathName": "pages/qiandao/qiandao",
 					"scene": null
 				}
 			]

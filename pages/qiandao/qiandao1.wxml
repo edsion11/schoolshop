@@ -1,0 +1,8 @@
+<view style="width: 90%;height:640rpx;overflow:hidden;margin: 0 auto 40rpx;">
+  <calendar calendarConfig="{{calendarConfig}}" bind:onSwipe="onSwipe" bind:onTapDay="onTapDay" bind:afterTapDay="afterTapDay" bind:whenChangeWeek="whenChangeWeek" bind:whenChangeMonth="whenChangeMonth" bind:afterCalendarRender="afterCalendarRender"></calendar>
+</view>
+<view class='b cc wrap btn-wrap'>
+  <button class='b cc btn btn-cyan btn-action-setTodoLabels' data-action="setTodoLabels" bindtap="setTodoLabels">
+    签到
+  </button>
+</view>

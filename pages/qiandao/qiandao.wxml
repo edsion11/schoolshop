@@ -1,4 +1,10 @@
-<!--pages/qiandao/qiandao.wxml-->
+<import src="../../template/calendar/index.wxml" />
 <cu-custom isBack="{{true}}">
   <view slot="content" style="color:black;font-weight:150">签到</view>
 </cu-custom>
+<view class="calendar-wrap">
+  <template is="calendar" data="{{...calendar}}" />
+  <view class="dianji" bindtap="setTodoLabel">
+    <text>签到</text>
+  </view>
+</view>
