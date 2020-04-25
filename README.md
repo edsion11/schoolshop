@@ -1,2 +1,2 @@
-# schoolshop
-电商小程序
+# schoolsho
+校友会小程序
